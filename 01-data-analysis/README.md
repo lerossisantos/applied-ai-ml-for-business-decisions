@@ -1,6 +1,6 @@
 # Food Delivery Demand Analysis: Exploratory Data Analysis in Python
 
-*Program project: FoodHub*
+*Program project: FoodHub · Originally completed February 26, 2025*
 
 **Executive summary:** A food delivery platform wanted to understand demand
 across restaurants and cuisines to improve customer experience. Analyzing
@@ -31,12 +31,17 @@ order, when, how fast it arrives, and how they rate the experience.
 
 ![Orders by cuisine type](images/orders-by-cuisine.png)
 
+![Delivery time: weekdays vs. weekends](images/delivery-time-weekday-vs-weekend.png)
+
 ## Recommendations
 1. **Fix the measurement gaps first:** split "preparation time" into cooking time and driver wait time, and capture the actual day and date of each order.
 2. **Grow feedback coverage:** add lightweight rating prompts or incentives, and investigate why no low ratings appear.
 3. **Grow weekday demand:** use day-specific promotions once day-level data is available.
 4. **Diversify demand:** feature restaurants from under-ordered cuisines in the app.
 5. **Speed up delivery at peak:** add driver incentives for high-demand periods.
+
+## Data
+1,898 anonymized food delivery orders, included in the [`data`](data/) folder. To run the notebook, place `foodhub_order.csv` in the same folder as the notebook.
 
 ## Skills & tools
 Python, pandas, NumPy, Matplotlib, Seaborn · exploratory data analysis · data quality assessment · univariate & multivariate analysis · business recommendations
